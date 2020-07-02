@@ -1,2 +1,2 @@
-# Obronik Wyborczy
+# Obornik Wyborczy
 Obornik Wyborczy is a school project for testing students' political views on certain subjects concerning school's life. After a set of questions our website can show which candidate for school consulate office shares the same ideas and believes. This website was prepared for 2020 consulate election in one of the Warsaw's high schools. Whole project was developed in Bootstrap Studio.
