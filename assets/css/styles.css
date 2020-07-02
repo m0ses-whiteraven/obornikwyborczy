@@ -1,0 +1,150 @@
+#banner {
+  width: 100%;
+  height: 10vh;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    background-image: url("../../assets/img/OW.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 60px;
+    background-size: 80%;
+    margin-left: 50px;
+  }
+}
+
+#navcol-1 {
+  padding-left: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  #navcol-1 {
+    position: absolute;
+    display: block;
+    top: 13px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #navcol-1 {
+    right: 100px;
+  }
+}
+
+.test-button {
+  border-radius: 24px;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #1f77e1;
+}
+
+@media (min-width: 922px) {
+  .test-button {
+    position: relative;
+  }
+}
+
+.menu {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    padding: 24px 0;
+    border-top-width: 2px;
+  }
+}
+
+.panel-small h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.panel-small h2 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  margin: 20px 0 50px;
+}
+
+.hero-image {
+  padding: 65px 0 100px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-brand {
+  padding: 0 25px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1f77e1;
+  border-radius: 24px;
+  border: 3px solid #1f77e1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 200ms;
+  /*-webkit-tap-highlight-color: transparent;*/
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .btn-brand {
+    font-size: 18px;
+    line-height: 40px;
+    color: #1f77e1;
+    border-color: #1f77e1;
+    border-radius: 24px;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row.cart-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    display: inline-block;
+    padding: 0 0 0 20px;
+  }
+}
+
+#navlink a {
+  padding: 5px 20px;
+}
+
+#navcol-1 a {
+  color: #000;
+}
+
+.speech {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
