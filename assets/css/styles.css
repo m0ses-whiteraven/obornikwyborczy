@@ -1,0 +1,266 @@
+#banner {
+  width: 100%;
+  height: 10vh;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    background-image: url("../../assets/img/OW.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 60px;
+    background-size: 80%;
+    margin-left: 50px;
+  }
+}
+
+#navcol-1 {
+  padding-left: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  #navcol-1 {
+    position: absolute;
+    display: block;
+    top: 13px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #navcol-1 {
+    right: 100px;
+  }
+}
+
+.test-button {
+  border-radius: 24px;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #1f77e1;
+}
+
+@media (min-width: 922px) {
+  .test-button {
+    position: relative;
+  }
+}
+
+.menu {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    padding: 24px 0;
+    border-top-width: 2px;
+  }
+}
+
+.panel-small h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.panel-small h2 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  margin: 20px 0 50px;
+}
+
+.hero-image {
+  padding: 65px 0 100px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.btn-brand {
+  padding: 0 25px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1f77e1;
+  border-radius: 24px;
+  border: 3px solid #1f77e1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 200ms;
+  /*-webkit-tap-highlight-color: transparent;*/
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .btn-brand {
+    font-size: 18px;
+    line-height: 40px;
+    color: #1f77e1;
+    border-color: #1f77e1;
+    border-radius: 24px;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row.cart-one {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    display: inline-block;
+    padding: 0 0 0 20px;
+  }
+}
+
+#navlink a {
+  padding: 5px 20px;
+}
+
+#navcol-1 a {
+  color: #000;
+}
+
+.speech {
+  /*position: absolute;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#intro {
+  position: relative;
+  padding: 45px 0 100px;
+}
+
+@media (min-width: 992px) {
+  #intro {
+    padding-bottom: 210px;
+  }
+}
+
+#intro h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (min-width: 992px) {
+  #intro h2 {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 32px;
+  }
+}
+
+.counter {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #437fc1;
+}
+
+@media (min-width: 992px) {
+  .counter {
+    margin-top: 30px;
+    line-height: 105px;
+    text-align: center;
+    font-size: 96px;
+  }
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .panel {
+    flex: 0 0 50%;
+    max-width: 100%;
+  }
+}
+
+.text-brand {
+  color: #144bb0;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 18px;
+  margin: 0 0 50px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.zaproszenie {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+@media (min-width: 992px) {
+  .zaproszenie {
+    margin: 0 0 30px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.zap2 {
+  text-align: center;
+}
+
+#intro img {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
