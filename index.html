@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200i,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -30,7 +30,7 @@
         </div>
         </div>
     </nav>
-    <section id="sprawdz-swoje-poglady" style="width: 100%;height: 70vh;">
+    <header class="header">
         <div class="hero-image">
             <div class="container">
                 <div class="row cart-one">
@@ -44,21 +44,117 @@
                     <div class="col">
                         <div class="pannel-small"></div><img src="assets/img/map.svg"></div>
                 </div>
-            </div><img class="speech" src="assets/img/fala_1.png"></div>
-    </section>
+            </div>
+        </div><img class="speech" src="assets/img/fala_1.png"></header>
     <section id="intro">
         <div class="container">
-            <h2><br><strong>Obronik Wyborczy</strong>&nbsp;umożliwia łatwe porównanie swoich poglądów z odpowiedziami udzielonymi przez komitety wyborcze.<br><br></h2>
+            <h2 style="font-family: Montserrat, sans-serif;"><br><strong>Oboronik Wyborczy</strong>&nbsp;umożliwia łatwe porównanie swoich poglądów z odpowiedziami udzielonymi przez komitety wyborcze.<br><br></h2>
         </div>
         <div class="panel">
             <p class="counter">696 420</p>
             <p class="text-brand">Osób skorzystało z Obornika Wyborczego</p>
         </div>
         <div class="zap2">
-            <p class="zaproszenie">Czacki News zaprasza do wypełnienia testu</p><button class="btn btn-primary btn-brand" type="button" style="background-color: rgba(255,255,255,0);font-family: Montserrat, sans-serif;">ROZPOCZNIJ TEST</button></div><img src="assets/img/fala_8.png"></section>
-    <script
-        src="assets/js/jquery.min.js"></script>
+            <p class="zaproszenie" style="font-family: Montserrat, sans-serif;font-weight: 300;">Czacki News zaprasza do wypełnienia testu</p><button class="btn btn-primary btn-brand" type="button" style="background-color: rgba(255,255,255,0);font-family: Montserrat, sans-serif;">ROZPOCZNIJ TEST</button></div><img src="assets/img/fala_8.png"></section>
+    <section
+        id="chart-section">
+        <div class="container">
+            <div class="row r">
+                <div class="col c2">
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">A</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">B</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">C</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">D</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">E</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-label">
+                            <p class="label">F</p>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c2">
+                    <div class="content">
+                        <h1 class="pow">Jak powstaje Obornik Wyborczy?</h1>
+                        <p></p>
+                        <ol>
+                            <li class="ltr">Przygotowujemy zestaw stwierdzeń dotyczących najbardziej aktualnych i istotnych tematów z życia szkolnego każdego Czackiewicza.</li>
+                            <li class="ltr">Przekazujemy zestaw stwierdzeń do komitetów wyborczych.</li>
+                            <li class="ltr">Tworzymy test porównujący odpowiedzi komitetów z odpowiedziami użytkowników.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js%22%3E%22%3E"></script>
+
+<script>
+    function reloadProgressBar() {
+            $('.progress-bar .progress').each(function(i, el) {
+                $(el).css('width', Math.floor((Math.random() * 100) + 1) + '%');
+            });
+
+            setTimeout(reloadProgressBar, 2000);
+        }
+</script>
+
+<script>
+    $(document).ready(function() {
+        reloadProgressBar();
+    });
+</script>
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
