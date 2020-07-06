@@ -523,3 +523,87 @@ li {
   box-sizing: border-box;
 }
 
+.speech2 {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: -1px;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#kwestionariusz {
+  padding: 80px 0;
+  background-color: #267be5;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #kwestionariusz {
+    padding: 200px 0 270px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #kwestionariusz {
+    padding-bottom: 270px;
+  }
+}
+
+.question-container {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .question-container {
+    max-width: 540px;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .question-container {
+    max-width: 720px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .question-container {
+    max-width: 960px;
+    margin-bottom: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .question-container {
+    max-width: 1140px;
+  }
+}
+
+.wyp-test {
+  margin: 0 0 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 2rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
