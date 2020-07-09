@@ -23,20 +23,28 @@
 
 <body>
     <section id="banner" style="width: 100%;height: 11vh;background-image: url(&quot;assets/img/banner.png&quot;);background-position: center;background-size: contain;background-repeat: no-repeat;"></section>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top menu" style="background-color: #fff;width: 100%;height: 12vh;">
-        <div class="container-fluid"><a class="navbar-brand" href="#" style="padding: 0;width: 300px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="padding-right: 16px;font-family: 'Roboto Condensed', sans-serif;font-weight: 400;">O OBORNIKU</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgba(0,0,0);padding-right: 16px;font-family: 'Roboto Condensed', sans-serif;font-weight: 400;">FAQ</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 16px;font-family: 'Roboto Condensed', sans-serif;font-weight: 400;">TWÓRCY</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 16px;font-weight: 400;">KONTAKT</a></li>
-                    <li class="nav-item" role="presentation"><button class="btn btn-primary test-button" type="button" style="font-weight: 400;font-family: 'Roboto Condensed', sans-serif;">WYPEŁNIJ TEST</button></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
+    <div id="nav_bar" class="nav-bar"><img class="logo" src="assets/img/OW.png"><nav id="nav" class="nav">
+    <ul>
+        <li>
+            <a href="#o_oborniku" class>O OBORNIKU</a>
+        </li>
+        <li>
+            <a href="#faq" class>FAQ</a>
+        </li>
+        <li>
+            <a href="#tworcy" class>TWÓRCY</a>
+        </li>
+        <li>
+            <a href="#kontakt" class>KONTAKT</a>
+        </li>
+        <li>
+            <a href="placeholder" class="nav-button">WYPEŁNIJ TEST</a>
+        </li>
+    </ul>
+        
+</nav>
+        <div id="toggler" class="toggler"></div>
+    </div>
     <header class="header">
         <div class="hero-image">
             <div class="container">
@@ -188,15 +196,11 @@
                                         <h3>Czym jest Obornik Wyborczy?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_1" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
-                            </div>
-                            <div class="card">
-                                <div id="heading_2" class="card-header">
-                                    <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false">
-                                        <h3>Kto jest autorem Obornika i kto sfinansował jego powstanie?</h3>
-                                    </a>
-                                </div>
-                                <div id="collapse_2" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_1" class="faq-answer collapse" data-parent="#accordion"><p><strong>Obornik Wyborczy</strong> to stworzone przez licealistów jednego z warszawskich liceów narzędzie internetowe, niemające absolutnie nic wspólnego ze znaną witryną www, umożliwiające łatwe porównanie swoich poglądów z deklaracjami komitetów wyborczych w wyborach na konsulat szkolny. Tworzymy je, by pomagać w podejmowaniu świadomych decyzji wyborczych uczniom średnio i słabo zainteresowanym polityką wewnątrzszkolną. Dlatego dbamy, by narzędzie to było możliwie proste w obsłudze, a zawarte w nim stwierdzenia były sformułowane w sposób przystępny i zrozumiały.</p>
+
+<p>Obornik wymaga od użytkownika ustosunkowania się do stwierdzeń dotyczących przeróżnych kwestii, począwszy od drożdżówek, a kończąc na rewolucji w systemie edukacji. Następnie narzędzie porównuje odpowiedzi użytkownika z odpowiedziami komitetów wyborczych i oblicza ich procentową zgodność.</p>
+
+<p>Obornik wpisuje się w nurt działań okołowyborczych zachęcających do świadomego głosowania. Zależy nam, aby decyzje podejmowane przy urnach były przemyślane i opierały się na programach wyborczych kandydatów i kandydatek.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_3" class="card-header">
@@ -204,7 +208,7 @@
                                         <h3>Co Obornik Wyborczy robi z odpowiedziami użytkowników wypełniających test?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_3" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_3" class="faq-answer collapse" data-parent="#accordion"><p>Dane zbierane przez Obornik Wyborczy służą do optymalizacji strony tak, aby jak najlepiej odpowiadała na potrzeby użytkowników. Oprócz tego wszelką aktywność użytkownika możemy rejestrować i sprzedawać firmom trzecim. Możemy zbierać takie informacje jak czas spędzony na przeglądaniu witryny, ilość kliknięć na poszczególne sekcje strony, a nawet, za pomocą magii, wiedzieć o jakiej karmie dla kota myślałeś w zeszły piątek. Wszystko to aby reklamy, które wyskakują na twoim urządzeniu, kiedy przeglądasz Internet o drugiej w nocy były tak personalne jak tylko się da.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_4" class="card-header">
@@ -212,7 +216,7 @@
                                         <h3>Skąd pochodzą odpowiedzi komitetów?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_4" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_4" class="faq-answer collapse" data-parent="#accordion"><p>Obornik Wyborczy to jedyne narzędzie w Liceum Czackiego, które bazuje na odpowiedziach udzielanych przez komitety, a nie na analizie programów kandydatów i wypowiedzi medialnych. Poza ustosunkowaniem się do stwierdzeń, komitety mają również możliwość opatrzenia swoich odpowiedzi krótkimi komentarzami. Takie podejście gwarantuje pełen obiektywizm i wiarygodność otrzymywanych wyników.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_5" class="card-header">
@@ -220,7 +224,7 @@
                                         <h3>Jakie komitety zaprosiliśmy do udziału w Oborniku Wyborczym?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_5" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_5" class="faq-answer collapse" data-parent="#accordion"><p>Do udziału w Oborniku Wyborczym zapraszamy wszystkich zarejestrowanych kandydatów i wszystkie zarejestrowane kandydatki na stanowisko konsuli.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_6" class="card-header">
@@ -228,7 +232,11 @@
                                         <h3>Jak oblicza się stopień zgodności odpowiedzi użytkówników z poglądami komitetów?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_6" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_6" class="faq-answer collapse" data-parent="#accordion"><p>Na każde ze stwierdzeń użytkownicy oraz komitety wyborcze udzielają jednej z odpowiedzi: "Zgadzam się", "Nie zgadzam się" lub "Nie mam zdania".
+Za poszczególne kombinacje odpowiedzi użytkownika i danego komitetu do każdego ze stwierdzeń przypisuje się następującą liczbę punktów, jeżeli: zarówno użytkownik, jak i komitet odpowiedzą “Zgadzam się” albo “Nie zgadzam się” - 3 punkty, użytkownik i komitet odpowiedzą “Nie mam zdania” - 2 punkty, użytkownik albo komitet odpowie “Zgadzam się” albo “Nie zgadzam się”, a druga strona odpowie “Nie mam zdania” - 1 punkt, jedna strona odpowie “Zgadzam się”, a druga “Nie zgadzam się” - 0 punktów.</p>
+
+<p>Kolejnym krokiem jest dodanie punktów przypisanych do poszczególnych stwierdzeń - dla każdego z komitetów.  Następnie uzyskane w ten sposób sumy punktów są dzielone przez maksymalną możliwą do zdobycia liczbę punktów.
+Otrzymane w ten sposób wyniki są przedstawiane w postaci wykresu procentowej zgodności odpowiedzi użytkownika z odpowiedziami każdego z komitetów wyborczych.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_7" class="card-header">
@@ -236,7 +244,7 @@
                                         <h3>O wyborach</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_7" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_7" class="faq-answer collapse" data-parent="#accordion"><p>Na chwilę obecną, nieznany jest termin wyborów na konsulat 2020.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_8" class="card-header">
@@ -244,7 +252,7 @@
                                         <h3>Kto ma prawo do głosowania?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_8" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_8" class="faq-answer collapse" data-parent="#accordion"><p>Prawo do głosowania w wyborach na konsulat szkolny 2020 mają wszyscy pełnoprawni uczniowie XXVII LO. im. Tadeusza Czackiego w Warszawie. </p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_9" class="card-header">
@@ -252,7 +260,9 @@
                                         <h3>Jak przebiega proces doboru stwierdzeń?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_9" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_9" class="faq-answer collapse" data-parent="#accordion"><p>Pracę nad przygotowaniem Obornika rozpoczynamy zaraz po rozpoczęciu roku szkolnego. Pierwszym krokiem jest opracowanie wstępnej listy stwierdzeń. Staramy się, aby obejmowała ona jak najszersze spektrum aktualnych i istotnych zagadnień szkolnych dyskutowanych w debacie, a także maksymalnie różnicowała komitety wyborcze. Przygotowując listę opieramy się na propozycjach zagadnień i tematów wskazywanych przez użytkowników i ankietowanych.</p>
+
+<p>Kolejnym krokiem jest skonsultowanie wstępnej listy stwierdzeń z Komitetem Ekspertów, czyli ciałem doradczym, w którego skład wchodzą badacze i badaczki życia społecznego i politycznego. Korzystając z ich wiedzy i doświadczenia wybieramy najlepsze propozycje stwierdzeń oraz dopracowujemy ich treść.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_10" class="card-header">
@@ -260,7 +270,7 @@
                                         <h3>Jak przebiega proces tworzenia wyjaśnień do stwierdzeń?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_10" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_10" class="faq-answer collapse" data-parent="#accordion"><p>Wyjaśnienia do stwierdzeń przygotowywane są przez zespół Czacki News. Staramy się, by wyjaśnienia te w maksymalnie przystępny i obiektywny sposób opisywały zagadnienia, do których odnosi się dane stwierdzenie. Sformułowane przez nas propozycje konsultujemy z osobami wchodzącymi w skład Komitetu Ekspertów.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_11" class="card-header">
@@ -268,7 +278,7 @@
                                         <h3>Kto wchodzi w skład Komitetu Ekspertów?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_11" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_11" class="faq-answer collapse" data-parent="#accordion"><p>W skład Komitetu Ekspertów wchodzą badacze i badaczki życia społecznego i politycznego każdego czackiewicza.</p></div>
                             </div>
                             <div class="card">
                                 <div id="heading_12" class="card-header">
@@ -276,13 +286,77 @@
                                         <h3>Dlaczego w Oborniku nie ma wszystkich kandydatów?</h3>
                                     </a>
                                 </div>
-                                <div id="collapse_12" class="faq-answer collapse" data-parent="#accordion"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p></div>
+                                <div id="collapse_12" class="faq-answer collapse" data-parent="#accordion"><p>Na chwilę obecną zespółowi naszych ankieterów nie udało się skontaktować ze wszystkimi komitetami i przeprowadzić wywiadu w celu ustalenia odpowiedzi na zadane stwierdzenia.</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section><a id="tworcy" class="anchor" href="#"></a>
+        <section class="about-us"><img class="speech4" src="assets/img/fala_7.png"><a id="tworcy" class="anchor" href="#"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="about-us-col1"><img class="img-tworcy" src="assets/img/ceo.png"></div>
+                    <div class="about-us-col2">
+                        <div>
+                            <h2 class="tworcy-title">Twórcy</h2>
+                            <p>Cofnijmy się do roku <strong>1796</strong>, kiedy to 31-letni <strong>Tadeusz Czacki</strong> wydał pierwszy w Polsce <strong>Obornik Wyborczy</strong>, umożliwiający biednym chłopom <strong>dokładne poznanie swoich preferencji politycznych</strong>.
+                                Przez pierwsze lata swojej działalności Obornik opublikowany był na domenie obornik.wordpress.com, jednak już wkrótce dzięki swojej mamie, Katarzynie Małachowskiej oraz tutorialom z YouTube'a młody Czacki szybko podłączył
+                                własną domenę kupioną za <strong>dwa i pół konia</strong>, dzięki czemu szybko rozpoczął swoją działalność w Internecie.<br></p>
+                            <p><strong>Innowacyjny projekt</strong> Obornika Wyborczego szybko został zauważony przez <strong>zagraniczne media</strong>. Gazeta <strong>The Guardian</strong> stwierdziła, że jest to "najlepszy pomysł od czasów wynalezienia
+                                pługa"<em>, </em>z kolei zachwyceni dziennikarze <strong>The New York Times</strong>&nbsp;w skali <strong>od 1 do 10 wystawili</strong> projektowi ocenę <strong>11</strong>. Pojawiły się również głosy krytyki - niemiecki
+                                dziennik <strong>Bild-Zeitung</strong> wydawnictwa <strong>Axel-Springer SE</strong> opisał Obornik jako "bezczelna i skandaliczna kopia Latarnika Wyborczego stworzona przez prostego chłopaka z Krosna", za co został natychmiastowo
+                                skrytykowany - Tadeusz Czacki urodził się bowiem w <strong>Porycku</strong>.<br></p>
+                            <p>Lata mijały, a Obornik stawał się <strong>coraz potężniejszym narzędziem politycznym</strong>. Gdy w <strong>1995 roku</strong> okazało się, że <strong>Aleksander Kwaśniewski</strong> zasugerowawszy się wynikami z Obornika
+                                Wyborczego zamiast na siebie <strong>zagłosował na Roberta Biedronia</strong>, gazeta <strong>Wyborcza</strong> określiła Obornika mianem "pralni mózgu, która każdemu wmówi swoją rację".<br></p>
+                            <p>Stworzenie Obornika Wyborczego od początku jego powstania <strong>sfinansowały światowej klasy potęgi informatyczne</strong>, takie jak <strong>Microsoft, Google, frytkarnia Okienko czy Apple</strong>. O naszych dokonaniach
+                                w kwestii rozpowszechniania odpłatnych narzędzi pozwalających na sklasyfikowanie preferencji politycznych wyborców mówiły <strong>prawdziwe gwiazdy estrady</strong>, jak choćby <strong>Joanna Krupa, Jozin z Bazin</strong>                                czy <strong>Rihanna</strong>. O tym, jak <strong>istotnym narzędziem</strong> jest Obornik Wyborczy w otaczającym nas świecie polityki, świadczą chociażby słowa <strong>Benita Amilcare'a Andrea Mussoliniego</strong>, przywódcy
+                                ruchu faszystowskiego, który po odpowiedzi na pytania znajdujące się w Oborniku Wyborczym miał rzec do swojego dobrego znajomego, króla <strong>Wiktora Emanuela III</strong>, "jasna cholibka, znowu mi wyszedł Biedroń".<br></p><p>Więcej na <strong><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><span style="text-decoration: underline;">czackinews.pl</span></a></strong><br /></p></div>
+                    </div>
+                </div>
+            </div>
+        </section><a id="partnerzy" class="anchor" href="#"></a>
+        <section class="partners">
+            <div class="partners-img"><img class="speech5" src="assets/img/fala_8.png"></div>
+            <div class="partners-container">
+                <div class="container">
+                    <h2 class="partnerzy-title">Partnerzy</h2>
+                    <div class="row">
+                        <div class="partners-col1">
+                            <h3>WSPÓŁORGANIZATOR</h3>
+                            <div class="media-partners"><img src="assets/img/logo-swps.png"></div>
+                        </div>
+                        <div class="partners-col2">
+                            <h3>PARTNER MEDIALNY</h3>
+                            <div class="media-partners"><img src="assets/img/logo-wp.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><script>
+    var btns = document.getElementsByClassName("toggler");
+    var umpalumpa = document.getElementById("nav");
+    var toggler = document.getElementById("toggler");
+    
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+          
+        // Add the active class to the current/clicked button
+        if (current.length == 0) {
+            this.className += " active";
+            umpalumpa.className += " active";
+        }
+
+        // If there's no active class
+        else if (current.length > 0) {
+            umpalumpa.className = "nav";
+            this.className = this.className.replace(" active", "");
+        }
+      });
+    }
+    
+</script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/script.js"></script>
