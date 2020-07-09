@@ -212,7 +212,14 @@ html {
   font-size: 65px;
   font-weight: 700;
   text-align: center;
+  line-height: 1;
   color: #437fc1;
+}
+
+@media (min-width: 576px) {
+  .counter {
+    font-size: 80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1169,6 +1176,7 @@ faq-answer {
   padding-bottom: 3rem !important;
   margin-top: 0;
   font-family: 'Montserrat';
+  font-weight: 500;
 }
 
 @media (min-width: 992px) {
@@ -1336,5 +1344,9 @@ faq-answer {
 .toggler.active::before {
   top: 0;
   transform: rotate(45deg);
+}
+
+.sticky-top {
+  position: sticky;
 }
 
