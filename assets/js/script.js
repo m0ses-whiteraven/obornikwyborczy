@@ -1,5 +1,3 @@
-alert('123');
-
 var questions = ["Konsul powinien informować uczniów, dokąd nocą tupta jeż.",
 "Konsul powinien być prostym chłopakiem z Krosna.",
 "Debata w TVP jest ustawiona.",
