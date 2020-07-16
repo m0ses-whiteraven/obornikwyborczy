@@ -1982,3 +1982,268 @@ faq-answer {
   }
 }
 
+.pagination {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 42.5px;
+  opacity: 1;
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 992px) {
+  .pagination {
+    height: auto;
+    overflow: visible;
+    margin-top: 30px !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .pagination {
+    width: 381px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pagination {
+    width: 300px;
+    margin: 0px auto;
+  }
+}
+
+.test-pagination-wrapper {
+  left: 0px;
+  top: 4px;
+  padding: 0 20px 0 5px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .test-pagination-wrapper {
+    min-width: 992px;
+    position: static;
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+.test-change-question-button {
+  display: inline-block;
+  width: 42.5px;
+  height: 42.5px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .test-change-question-button {
+    width: 33px;
+    height: 33px;
+    display: inline-block !important;
+    display: block;
+    position: static;
+  }
+}
+
+.test-change-step {
+  display: block;
+  width: 34px;
+  height: 34px;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #d5d5d5 !important;
+  cursor: default;
+  transition: all 200ms;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .test-change-step {
+    width: 33px;
+    height: 33px;
+    font-size: 16px;
+  }
+}
+
+.test-change-question-button.active a {
+  color: #fff;
+  background-color: #2081e8;
+  transform: scale(1.25);
+}
+
+.test-change-question-button.unlock a {
+  cursor: pointer;
+}
+
+.test-change-question-button.done a {
+  color: #2081e8;
+  cursor: pointer;
+}
+
+.test-result-change-button {
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #fff !important;
+  color: #d5d5d5 !important;
+  transform: scale(1) !important;
+  font-weight: 500;
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  font-family: 'Montserrat';
+  text-align: center;
+  border-radius: 50%;
+  cursor: default;
+  text-decoration: none;
+  transition: all 200ms;
+}
+
+@media (min-width: 992px) {
+  .test-result-change-button {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.test-results-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.test-results-title {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.test-results-title h1 {
+  margin: 0 0 18px 0;
+  padding: 0 0 2px 0;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #1f77e1;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .test-results-title h1 {
+    letter-spacing: 0;
+  }
+}
+
+.test-results p {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.test-results-chart {
+  position: relative;
+  width: 100%;
+  /*padding-left: 15px;*/
+  /*padding-right: 15px;*/
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .test-results-chart {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.test-results-chart-row {
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test-results-chart-row-img {
+  flex: 0 0 10%;
+  max-width: 10%;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  /*width: 60px;*/
+}
+
+.test-results-chart-progressbar {
+  flex: 0 0 70%;
+  max-width: 70%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .test-results-chart-progressbar {
+    /*flex: 0 0 70%;*/
+    /*max-width: 70%;*/
+    padding-left: 0;
+    padding-right: 0;
+    /*position: relative;*/
+    /*width: 100%;*/
+  }
+}
+
+.test-results-chart-percent {
+  padding-left: 0;
+  padding-right: 0;
+  flex: 0 0 20%;
+  max-width: 20%;
+  position: relative;
+  width: 100%;
+}
+
+.test-results-chart-row-img img {
+  width: 60px;
+}
+
+.test-progressbar-gray {
+  height: 60px;
+  margin-bottom: 5px;
+  border-radius: 0;
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.6s ease;
+  justify-content: center;
+}
+
+.test-progressbar-blue {
+  height: 100%;
+  background-color: #2881e9;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  transition: width 800ms;
+  width: 69%;
+}
+
