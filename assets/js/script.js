@@ -1,4 +1,12 @@
    
+//aby dodać nowe pytanie:
+//dodaj je do listy questions
+//dodaj odpowiedź do listy odpowiedzi każdego z kandydatów
+//w HTMLu dodaj nowy step oraz step do pokazywania odpowiedzi
+//dodaj przyciski do dwóch pagination
+//dodaj event listenery do tych przycisków
+
+
     var current_question = 0;
     var testbuttonnext = document.getElementsByClassName("test-button-next");
     var next_question_num = current_question + 1;
@@ -178,12 +186,13 @@
     document.getElementById("change-to-2").addEventListener("click", function(){setPagination(2)});
     document.getElementById("change-to-3").addEventListener("click", function(){setPagination(3)});
     document.getElementById("change-to-4").addEventListener("click", function(){setPagination(4)});
+    document.getElementById("change-to-5").addEventListener("click", function(){setPagination(5)});
 
     //var current_question = 0;
     var questions = ["Konsul powinien informować uczniów, dokąd nocą tupta jeż.",
     "Konsul powinien być prostym chłopakiem z Krosna.",
     "Debata w TVP jest ustawiona.",
-    "Rafał kłamie."];
+    "Rafał kłamie.", "Pani z bufetu powinna zostać zmotoryzowana."];
 
     //0 - brak odpowiedzi,
     //1 - tak,
@@ -199,10 +208,10 @@
     //var candidates_answers = [odp_duda, odp_biedron, odp_trzaskowski, odp_bosak];
     //var candidates_surnames = ["A. Duda", "R. Biedroń", "R. Trzaskowski", "K. Bosak"];
 
-    var odp_ania_i_dominik = [2, 2, 1, 2];
-    var odp_maria_i_zocha = [1, 2, 1, 1];
-    var odp_my_zalatwimy = [1, 1, 1, 3];
-    var odp_partia_osobno = [1, 2, 3, 1];
+    var odp_ania_i_dominik = [2, 2, 1, 2, 3];
+    var odp_maria_i_zocha = [1, 2, 1, 1, 2];
+    var odp_my_zalatwimy = [1, 1, 1, 3, 1];
+    var odp_partia_osobno = [1, 2, 3, 1, 3];
 
     var candidates_answers = [odp_ania_i_dominik, odp_maria_i_zocha, odp_my_zalatwimy, odp_partia_osobno];
     var candidates_surnames = ["Ania i Dominik", "Maria i Zocha", "My Załatwimy!", "Partia Osobno"];
@@ -393,3 +402,4 @@ document.getElementById('answers_change-to-1').addEventListener("click", functio
 document.getElementById('answers_change-to-2').addEventListener("click", function(){nextCommitteeAnswers(2)});
 document.getElementById('answers_change-to-3').addEventListener("click", function(){nextCommitteeAnswers(3)});
 document.getElementById('answers_change-to-4').addEventListener("click", function(){nextCommitteeAnswers(4)});
+document.getElementById('answers_change-to-5').addEventListener("click", function(){nextCommitteeAnswers(5)});

@@ -2635,6 +2635,7 @@ faq-answer {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .committe_answers_row{

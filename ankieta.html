@@ -15,7 +15,7 @@
 </head>
 
 <body><header class="test-header">
-    <a href="#" target="blank">
+    <a href="index.html" target="blank">
         <picture class="test-logo">
             <source media="(min-width:576px)" srcset="https://latarnikwyborczy.pl/front/img/logo.svg">
             <img src="https://latarnikwyborczy.pl/front/img/logo_1_linia.svg" alt="Logo Obornik Wybrczy"></picture>
@@ -100,6 +100,25 @@
                 <div id="step_4" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
                     <div class="test-question-container">
                         <p class="test-question">Rafał kłamie.</p>
+                    </div>
+                    <ul class="test-help">
+                        <li><a class="test-explanation-open" href="#" onclick="document.getElementById('explanation_4').style.display = 'block'" data-toggle="modal">WYJAŚNIENIE</a></li>
+                    </ul>
+                    <div class="test-buttons">
+                        <div class="test-wrapper">
+                            <div class="test-slide">
+                                <div class="test-more-buttons">
+                                    <div class="test-button-button"><a class="test-button text-decoration-none agreed test-button-next" href="#">ZGADZAM SIĘ</a></div>
+                                    <div class="test-button-button"><a class="test-button text-decoration-none test-button-next non-agreed" href="#">NIE ZGADZAM SIĘ</a></div>
+                                    <div class="test-button-button"><a class="test-button text-decoration-none test-button-next neutral" href="#">NIE MAM ZDANIA</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step_5" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                    <div class="test-question-container">
+                        <p class="test-question">Pani z bufetu powinna zostać zmotoryzowana.</p>
                     </div>
                     <ul class="test-help">
                         <li><a class="test-explanation-open" href="#" onclick="document.getElementById('explanation_4').style.display = 'block'" data-toggle="modal">WYJAŚNIENIE</a></li>
@@ -374,6 +393,49 @@
                     </div>
 
 
+                    <div id="answers_step_5" class="answers_step fade-in">
+                        <h2 class="test-title">Stwierdzenie: <span>5/x</span></h2>
+                        <div class="test-question-container">
+                            <p class="test-question">Pani z bufetu powinna zostać zmotoryzowana.</p>
+                        </div>
+                        <div class="committe_answers_rows">
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_agreed_5">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie mam zdania
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_neutral_5">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_non_agreed_5">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
@@ -406,6 +468,9 @@
                         <a class="test-change-step" step="4" id="change-to-4">4</a>
                     </div>
                     <div class="test-change-question-button">
+                        <a class="test-change-step" step="5" id="change-to-5">5</a>
+                    </div>
+                    <div class="test-change-question-button">
                         <a class="test-result-change-button">WYNIK</a>
                     </div>
                 </div>
@@ -424,6 +489,9 @@
                     </div>
                     <div class="test-change-question-button">
                         <a class="answers_test-change-step" step="4" id="answers_change-to-4">4</a>
+                    </div>
+                    <div class="test-change-question-button">
+                        <a class="answers_test-change-step" step="5" id="answers_change-to-5">5</a>
                     </div>
                 </div>
             </div>
