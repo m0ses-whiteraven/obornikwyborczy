@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>obornik-wyborczy</title>
+    <title>Obornik Wyborczy - Ankieta</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans">
@@ -17,13 +17,13 @@
 <body><header class="test-header">
     <a href="#" target="blank">
         <picture class="test-logo">
-            <source media="(min-width:576px)" srcset="https://latarnikwyborczy.pl/front/img/logo.svg">"
+            <source media="(min-width:576px)" srcset="https://latarnikwyborczy.pl/front/img/logo.svg">
             <img src="https://latarnikwyborczy.pl/front/img/logo_1_linia.svg" alt="Logo Obornik Wybrczy"></picture>
     </a>
 </header>
     <main class="test-main">
         <div class="container test-container">
-            <div class="test-questioner">
+            <div class="test-questioner" id="test-questioner">
                 <div id="step_0" class="test-step">
                     <h2 class="test-title">Jak wypełnić test?</h2>
                     <div class="test-intro-content">
@@ -40,12 +40,12 @@
                         <div class="test-button-div"><a id="start-test" class="test-button text-decoration-none test-button-next" href="#">ROZPOCZNIJ TEST</a></div>
                     </div>
                 </div>
-                <div id="step_1" class="test-step inactive"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                <div id="step_1" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
                     <div class="test-question-container">
                         <p class="test-question">Konsul powinien informować uczniów, dokąd nocą tupta jeż.</p>
                     </div>
                     <ul class="test-help">
-                        <li><a class="test-explenation-open" href="#" data-toggle="modal">WYJAŚNIENIE</a></li>
+                        <li><a class="test-explanation-open" onclick="document.getElementById('explanation_1').style.display = 'block'" href="#" data-toggle="modal">WYJAŚNIENIE</a></li>
                     </ul>
                     <div class="test-buttons">
                         <div class="test-wrapper">
@@ -59,12 +59,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="step_2" class="test-step inactive"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                <div id="step_2" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
                     <div class="test-question-container">
                         <p class="test-question">Konsul powinien być prostym chłopakiem z Krosna.</p>
                     </div>
                     <ul class="test-help">
-                        <li><a class="test-explenation-open" href="#" data-toggle="modal">WYJAŚNIENIE</a></li>
+                        <li><a class="test-explanation-open" href="#" onclick="document.getElementById('explanation_2').style.display = 'block'" data-toggle="modal">WYJAŚNIENIE</a></li>
                     </ul>
                     <div class="test-buttons">
                         <div class="test-wrapper">
@@ -78,12 +78,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="step_3" class="test-step inactive"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                <div id="step_3" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
                     <div class="test-question-container">
                         <p class="test-question">Debata w TVP jest ustawiona.</p>
                     </div>
                     <ul class="test-help">
-                        <li><a class="test-explenation-open" href="#" data-toggle="modal">WYJAŚNIENIE</a></li>
+                        <li><a class="test-explanation-open" href="#" onclick="document.getElementById('explanation_3').style.display = 'block'" data-toggle="modal">WYJAŚNIENIE</a></li>
                     </ul>
                     <div class="test-buttons">
                         <div class="test-wrapper">
@@ -97,12 +97,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="step_4" class="test-step inactive"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                <div id="step_4" class="test-step inactive fade-in"><h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
                     <div class="test-question-container">
                         <p class="test-question">Rafał kłamie.</p>
                     </div>
                     <ul class="test-help">
-                        <li><a class="test-explenation-open" href="#" data-toggle="modal">WYJAŚNIENIE</a></li>
+                        <li><a class="test-explanation-open" href="#" onclick="document.getElementById('explanation_4').style.display = 'block'" data-toggle="modal">WYJAŚNIENIE</a></li>
                     </ul>
                     <div class="test-buttons">
                         <div class="test-wrapper">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="test-results">
+                <div class="test-results fade-in" id="test-results">
                     <div class="test-results-row">
                         <div class="test-results-title">
                             <h1>Wyniki:</h1>
@@ -124,24 +124,277 @@
                     </div>
                     <p>Wykres przedstawia zgodność Twoich poglądów z deklaracjami poszczególnych komitetów wyborczych.</p>
                     <div class="test-results-chart">
+
+
                         <div class="test-results-chart-row">
                             <div class="test-results-chart-row-img">
-                                <img src="assets/img/swinia.jpg" alt="Kandydat nr 1">
+                                <img src="assets/img/ania_i_dominik.jpg" alt="Kandydat nr 1" id="candidate-img-1">
                             </div>
                             <div class="test-results-chart-progressbar">
                                 <div class="test-progressbar-gray">
-                                    <div class="test-progressbar-blue"></div>
+                                    <div class="test-progressbar-blue" id="progressbar-results-1"></div>
                                 </div>
+                                <p class="test-candidate-surname" id="candidate-name-1">Ania i Dominik</p>
                             </div>
-                            <div class="test-results-chart-percent"></div>
+                            <div class="test-results-chart-percent">
+                                <p class="test-results-percent" id="candidate-percent-1">73%</p>
+                            </div>
+                        </div>
+
+                        <div class="test-results-chart-row">
+                            <div class="test-results-chart-row-img">
+                                <img src="assets/img/maria_i_zocha.jpg" alt="Kandydat nr 2" id="candidate-img-2">
+                            </div>
+                            <div class="test-results-chart-progressbar">
+                                <div class="test-progressbar-gray">
+                                    <div class="test-progressbar-blue" id="progressbar-results-2"></div>
+                                </div>
+                                <p class="test-candidate-surname" id="candidate-name-2">Maria i Zocha</p>
+                            </div>
+                            <div class="test-results-chart-percent">
+                                <p class="test-results-percent" id="candidate-percent-2">62%</p>
+                            </div>
+                        </div>
+
+                        <div class="test-results-chart-row">
+                            <div class="test-results-chart-row-img">
+                                <img src="assets/img/my_zalatwimy.png" alt="Kandydat nr 3" id="candidate-img-3">
+                            </div>
+                            <div class="test-results-chart-progressbar">
+                                <div class="test-progressbar-gray">
+                                    <div class="test-progressbar-blue" id="progressbar-results-3"></div>
+                                </div>
+                                <p class="test-candidate-surname" id="candidate-name-3">My Załatwimy!</p>
+                            </div>
+                            <div class="test-results-chart-percent">
+                                <p class="test-results-percent" id="candidate-percent-3">55%</p>
+                            </div>
+                        </div>
+
+                        <div class="test-results-chart-row">
+                            <div class="test-results-chart-row-img">
+                                <img src="assets/img/partia_osobno.jpg" alt="Kandydat nr 4" id="candidate-img-4">
+                            </div>
+                            <div class="test-results-chart-progressbar">
+                                <div class="test-progressbar-gray">
+                                    <div class="test-progressbar-blue" id="progressbar-results-4"></div>
+                                </div>
+                                <p class="test-candidate-surname" id="candidate-name-4">Partia Osobno</p>
+                            </div>
+                            <div class="test-results-chart-percent">
+                                <p class="test-results-percent" id="candidate-percent-4">42%</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="show_campaign_committes_answers_div">
+                        <a id="show_campaign_committes_answers_btn" class="show_campaign_committes_answers_btn">Zobacz odpowiedzi komitetów</a>
+                    </div>
+
                 </div>
             </div>
+
+
+
+
+
+            <div class="campaign_committes_answers_questionnaire" id="campaign_committes_answers_questionnaire">
+                <div class="campaign_committes_steps">
+
+
+                    <div id="answers_step_1" class="answers_step active fade-in">
+                        <h2 class="test-title">Stwierdzenie: <span>1/x</span></h2>
+                        <div class="test-question-container">
+                            <p class="test-question">Konsul powinien informować uczniów, dokąd nocą tupta jeż.</p>
+                        </div>
+                        <div class="committe_answers_rows">
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_agreed_1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie mam zdania
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_neutral_1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_non_agreed_1">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="answers_step_2" class="answers_step fade-in">
+                        <h2 class="test-title">Stwierdzenie: <span>2/x</span></h2>
+                        <div class="test-question-container">
+                            <p class="test-question">Konsul powinien być prostym chłopakiem z Krosna.</p>
+                        </div>
+                        <div class="committe_answers_rows">
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_agreed_2">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie mam zdania
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_neutral_2">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_non_agreed_2">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="answers_step_3" class="answers_step fade-in">
+                        <h2 class="test-title">Stwierdzenie: <span>3/x</span></h2>
+                        <div class="test-question-container">
+                            <p class="test-question">Debata w TVP jest ustawiona.</p>
+                        </div>
+                        <div class="committe_answers_rows">
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_agreed_3">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie mam zdania
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_neutral_3">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_non_agreed_3">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="answers_step_4" class="answers_step fade-in">
+                        <h2 class="test-title">Stwierdzenie: <span>4/x</span></h2>
+                        <div class="test-question-container">
+                            <p class="test-question">Rafał kłamie.</p>
+                        </div>
+                        <div class="committe_answers_rows">
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_agreed_4">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie mam zdania
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_neutral_4">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="committe_answers_row">
+                                <div class="answers_candidates">
+                                    <div class="answer">
+                                        Nie zgadzam się
+                                    </div>
+                                    <div class="committe_answers_row" id="committee_answers_non_agreed_4">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="pagination" id="pagination">
                 <div class="test-pagination-wrapper">
                     <div class="test-change-question-button">
-                        <a class="test-change-step" step="1" id="change-to-1">1</a>
+                        <a class="test-change-step active" step="1" id="change-to-1">1</a>
                     </div>
                     <div class="test-change-question-button">
                         <a class="test-change-step" step="2" id="change-to-2">2</a>
@@ -157,146 +410,221 @@
                     </div>
                 </div>
             </div>
+
+            <div class="pagination" id="answers_pagination">
+                <div class="test-pagination-wrapper">
+                    <div class="test-change-question-button">
+                        <a class="answers_test-change-step answer_active" step="1" id="answers_change-to-1">1</a>
+                    </div>
+                    <div class="test-change-question-button">
+                        <a class="answers_test-change-step" step="2" id="answers_change-to-2">2</a>
+                    </div>
+                    <div class="test-change-question-button">
+                        <a class="answers_test-change-step" step="3" id="answers_change-to-3">3</a>
+                    </div>
+                    <div class="test-change-question-button">
+                        <a class="answers_test-change-step" step="4" id="answers_change-to-4">4</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="explanation_1" class="explanation_div">
+                <div class="explanation_dialog">
+                    <div class="explanation_modal_content">
+                        <div class="explanation_modal_header">
+                            <h5 class="explanation_modal_title">Wyjaśnienie:</h5>
+                            <button type="button" class="explanation_close" onclick="explanationWindowClose(1)" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="explanation_modal_body">
+                            <p class="explanation_question">
+                                W przypadkach podobnych do epidemii koronawirusa należy wprowadzać 
+                                stan nadzwyczajny.
+                            </p>
+                            <p></p>
+                            <p>
+                                Konstytucja RP dopuszcza możliwość wprowadzenia trzech stanów 
+                                nadzwyczajnych: wojennego, wyjątkowego i stanu klęski żywiołowej. 
+                                Stan wyjątkowy wprowadza się m.in. jeżeli zagrożone jest 
+                                bezpieczeństwo obywateli lub porządek publiczny, a stan klęski 
+                                żywiołowej - w celu zapobieżenia i usunięcia skutków katastrof 
+                                naturalnych.
+                            </p>
+                            <p style="text-align: justify;">
+                                W czasie stanów nadzwyczajnych:
+                            </p>
+                            <ul>
+                                <li style="text-align: justify;">
+                                    prawa i wolności obywatelskie mogą podlegać 
+                                    <strong>szerszym ograniczeniom </strong>niż zazwyczaj,
+                                </li>
+                                <li style="text-align: justify;">
+                                    <strong>nie wolno zmieniać Konstytucji </strong>
+                                    , ordynacji wyborczych oraz ustaw o wyborze Prezydenta i o 
+                                    stanach nadzwyczajnych,
+                                </li>
+                                <li style="text-align: justify;">  
+                                    w <strong>czasie ich trwania</strong>
+                                     oraz w ciągu <strong>90 dni</strong> po ich zakończeniu
+                                    <u>nie może być skrócona kadencja Sejmu ani przeprowadzane wybory 
+                                        lub referendum ogólnokrajowe</u>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="explanation_2" class="explanation_div">
+                <div class="explanation_dialog">
+                    <div class="explanation_modal_content">
+                        <div class="explanation_modal_header">
+                            <h5 class="explanation_modal_title">Wyjaśnienie:</h5>
+                            <button type="button" class="explanation_close" onclick="explanationWindowClose(2)" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="explanation_modal_body">
+                            <p class="explanation_question">
+                                W przypadkach podobnych do epidemii koronawirusa należy wprowadzać 
+                                stan nadzwyczajny.
+                            </p>
+                            <p></p>
+                            <p>
+                                Konstytucja RP dopuszcza możliwość wprowadzenia trzech stanów 
+                                nadzwyczajnych: wojennego, wyjątkowego i stanu klęski żywiołowej. 
+                                Stan wyjątkowy wprowadza się m.in. jeżeli zagrożone jest 
+                                bezpieczeństwo obywateli lub porządek publiczny, a stan klęski 
+                                żywiołowej - w celu zapobieżenia i usunięcia skutków katastrof 
+                                naturalnych.
+                            </p>
+                            <p style="text-align: justify;">
+                                W czasie stanów nadzwyczajnych:
+                            </p>
+                            <ul>
+                                <li style="text-align: justify;">
+                                    prawa i wolności obywatelskie mogą podlegać 
+                                    <strong>szerszym ograniczeniom </strong>niż zazwyczaj,
+                                </li>
+                                <li style="text-align: justify;">
+                                    <strong>nie wolno zmieniać Konstytucji </strong>
+                                    , ordynacji wyborczych oraz ustaw o wyborze Prezydenta i o 
+                                    stanach nadzwyczajnych,
+                                </li>
+                                <li style="text-align: justify;">  
+                                    w <strong>czasie ich trwania</strong>
+                                     oraz w ciągu <strong>90 dni</strong> po ich zakończeniu
+                                    <u>nie może być skrócona kadencja Sejmu ani przeprowadzane wybory 
+                                        lub referendum ogólnokrajowe</u>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="explanation_3" class="explanation_div">
+                <div class="explanation_dialog">
+                    <div class="explanation_modal_content">
+                        <div class="explanation_modal_header">
+                            <h5 class="explanation_modal_title">Wyjaśnienie:</h5>
+                            <button type="button" class="explanation_close" onclick="explanationWindowClose(3)" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="explanation_modal_body">
+                            <p class="explanation_question">
+                                W przypadkach podobnych do epidemii koronawirusa należy wprowadzać 
+                                stan nadzwyczajny.
+                            </p>
+                            <p></p>
+                            <p>
+                                Konstytucja RP dopuszcza możliwość wprowadzenia trzech stanów 
+                                nadzwyczajnych: wojennego, wyjątkowego i stanu klęski żywiołowej. 
+                                Stan wyjątkowy wprowadza się m.in. jeżeli zagrożone jest 
+                                bezpieczeństwo obywateli lub porządek publiczny, a stan klęski 
+                                żywiołowej - w celu zapobieżenia i usunięcia skutków katastrof 
+                                naturalnych.
+                            </p>
+                            <p style="text-align: justify;">
+                                W czasie stanów nadzwyczajnych:
+                            </p>
+                            <ul>
+                                <li style="text-align: justify;">
+                                    prawa i wolności obywatelskie mogą podlegać 
+                                    <strong>szerszym ograniczeniom </strong>niż zazwyczaj,
+                                </li>
+                                <li style="text-align: justify;">
+                                    <strong>nie wolno zmieniać Konstytucji </strong>
+                                    , ordynacji wyborczych oraz ustaw o wyborze Prezydenta i o 
+                                    stanach nadzwyczajnych,
+                                </li>
+                                <li style="text-align: justify;">  
+                                    w <strong>czasie ich trwania</strong>
+                                     oraz w ciągu <strong>90 dni</strong> po ich zakończeniu
+                                    <u>nie może być skrócona kadencja Sejmu ani przeprowadzane wybory 
+                                        lub referendum ogólnokrajowe</u>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="explanation_4" class="explanation_div">
+                <div class="explanation_dialog">
+                    <div class="explanation_modal_content">
+                        <div class="explanation_modal_header">
+                            <h5 class="explanation_modal_title">Wyjaśnienie:</h5>
+                            <button type="button" class="explanation_close" onclick="explanationWindowClose(4)" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="explanation_modal_body">
+                            <p class="explanation_question">
+                                W przypadkach podobnych do epidemii koronawirusa należy wprowadzać 
+                                stan nadzwyczajny.
+                            </p>
+                            <p></p>
+                            <p>
+                                Konstytucja RP dopuszcza możliwość wprowadzenia trzech stanów 
+                                nadzwyczajnych: wojennego, wyjątkowego i stanu klęski żywiołowej. 
+                                Stan wyjątkowy wprowadza się m.in. jeżeli zagrożone jest 
+                                bezpieczeństwo obywateli lub porządek publiczny, a stan klęski 
+                                żywiołowej - w celu zapobieżenia i usunięcia skutków katastrof 
+                                naturalnych.
+                            </p>
+                            <p style="text-align: justify;">
+                                W czasie stanów nadzwyczajnych:
+                            </p>
+                            <ul>
+                                <li style="text-align: justify;">
+                                    prawa i wolności obywatelskie mogą podlegać 
+                                    <strong>szerszym ograniczeniom </strong>niż zazwyczaj,
+                                </li>
+                                <li style="text-align: justify;">
+                                    <strong>nie wolno zmieniać Konstytucji </strong>
+                                    , ordynacji wyborczych oraz ustaw o wyborze Prezydenta i o 
+                                    stanach nadzwyczajnych,
+                                </li>
+                                <li style="text-align: justify;">  
+                                    w <strong>czasie ich trwania</strong>
+                                     oraz w ciągu <strong>90 dni</strong> po ich zakończeniu
+                                    <u>nie może być skrócona kadencja Sejmu ani przeprowadzane wybory 
+                                        lub referendum ogólnokrajowe</u>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </main>
-    
-    <script>
-    
-    var current_question = 0;
-    var testbuttonnext = document.getElementsByClassName("test-button-next");
-    var next_question_num = current_question + 1;
-    //alert(testbuttonnext.length);
-
-    //Adds functionality to the "I agree", "I disagree" and "I don't mind" buttons
-    const user_answers = [];
-
-    var agreed = document.getElementsByClassName("agreed");
-    var nonagreed = document.getElementsByClassName("non-agreed");
-    var neutral = document.getElementsByClassName("neutral");
-
-    for (var i = 0; i < agreed.length; i++) {
-        agreed[i].addEventListener("click", function(){setAnswer(1)})
-    };
-    for (var i = 0; i < nonagreed.length; i++) {
-        nonagreed[i].addEventListener("click", function(){setAnswer(2)})
-    };
-    for (var i = 0; i < neutral.length; i++) {
-        neutral[i].addEventListener("click", function(){setAnswer(3)})
-    };
-
-    var all_steps_len = document.getElementsByClassName("test-step").length;
-
-    function setAnswer(userAnswer){
-        //alert('Twoja odpowiedź to ' + userAnswer.toString());
-        var user_answer_index = current_question - 1;
-        user_answers.push(userAnswer);
-    }
-
-    // end of the section
-
-    for (var i = 0; i < testbuttonnext.length; i++) {
-        testbuttonnext[i].addEventListener("click", function(){nextQuestion(current_question + 1)})
-    };
-
-    function nextQuestion(question_num) {
-        var all_step = document.getElementsByClassName("test-step");
-        //alert(all_step.length);
-        for(i=0; i<all_step.length; i++){
-            //alert('Sprawdzam ' + i.toString());
-            if(all_step[i].classList.contains('inactive') == false && i != question_num){
-                //alert('Step o indexie ' + i.toString() + 'nie posiada już klasę inactive');
-                all_step[i].className += " inactive";
-                //break;
-            }
-        }
-        current_question = current_question + 1;
-        if (current_question != all_step.length) {
-        var step_to_show_name = 'step_' + question_num.toString();
-        var step_to_show = document.getElementById(step_to_show_name);
-        step_to_show.className = step_to_show.className.replace(" inactive", "");
-        
-        } else {
-        //alert(user_answers);
-        resultCheck();
-        };
-    }
-
-    
-    
-    
-
-    //var current_question = 0;
-    var questions = ["Konsul powinien informować uczniów, dokąd nocą tupta jeż.",
-    "Konsul powinien być prostym chłopakiem z Krosna.",
-    "Debata w TVP jest ustawiona.",
-    "Rafał kłamie."];
-
-    //0 - brak odpowiedzi,
-    //1 - tak,
-    //2 - nie,
-    //3 - nie mam zdania
-
-    var odp_duda = [1, 2, 2, 1];
-    var odp_biedron = [1, 1, 1, 3];
-    var odp_trzaskowski = [2, 2, 1, 2];
-    var odp_bosak = [1, 2, 1, 1];
-    var odp_zoltek = [1, 2, 3, 1];
-
-    var candidates_answers = [odp_duda, odp_biedron, odp_trzaskowski, odp_bosak, odp_zoltek];
-    var candidates_surnames = ["A. Duda", "R. Biedroń", "R. Trzaskowski", "K. Bosak", "S. Żółtek"];
-
-    
-    function resultCheck(){
-        var results = [0, 0, 0, 0, 0];
-        //alert(user_answers.length);
-        var max_points = 3 * user_answers.length;
-
-        var i;
-        for (i=0; i<=questions.length; i++) {
-            var j;
-            for (j=0; j<candidates_answers.length; j++){
-
-                var current_user_answer = user_answers[i];
-                var current_candidate = candidates_answers[j];
-                var current_candidate_answer = current_candidate[i];
-
-
-
-                if (current_user_answer == current_candidate_answer && (current_user_answer == 1 || current_user_answer == 2)) {
-                    results[j] += 3;
-                } else if (current_user_answer == current_candidate_answer && current_user_answer == 3) {
-                    results[j] += 2;
-                } else if (current_user_answer == 3 || current_candidate_answer == 3) {
-                    results[j] += 1;
-                }
-
-                //alert("obecnie sprawdzany kandydat to " + candidates_surnames[j] + ". Jego odpowiedź to " + current_candidate_answer.toString() + ", zaś moja to " + current_user_answer.toString() + ". Za to pytanie kandydat otrzymał " + results[j].toString());
-            }
-        }
-        //alert (results);
-
-        var result_string = "Oto Twoje wyniki! ";
-
-        var k;
-        for (k=0; k<candidates_answers.length; k++) {
-            var result_percent = results[k] / max_points * 100
-            result_percent = Math.round(result_percent);
-            var string_to_add = candidates_surnames[k] + ": " + result_percent.toString() +"%, "
-            result_string += string_to_add;
-        }
-
-        alert(result_string);
-    };
-
-
-    
-</script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
