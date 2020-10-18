@@ -187,12 +187,23 @@
     document.getElementById("change-to-3").addEventListener("click", function(){setPagination(3)});
     document.getElementById("change-to-4").addEventListener("click", function(){setPagination(4)});
     document.getElementById("change-to-5").addEventListener("click", function(){setPagination(5)});
+    document.getElementById("change-to-6").addEventListener("click", function(){setPagination(6)});
+    document.getElementById("change-to-7").addEventListener("click", function(){setPagination(7)});
+    document.getElementById("change-to-8").addEventListener("click", function(){setPagination(8)});
+    document.getElementById("change-to-9").addEventListener("click", function(){setPagination(9)});
+    document.getElementById("change-to-10").addEventListener("click", function(){setPagination(10)});
 
     //var current_question = 0;
-    var questions = ["Konsul powinien informować uczniów, dokąd nocą tupta jeż.",
-    "Konsul powinien być prostym chłopakiem z Krosna.",
-    "Debata w TVP jest ustawiona.",
-    "Rafał kłamie.", "Pani z bufetu powinna zostać zmotoryzowana."];
+    var questions = ["Uważam, że reżim sanitarny w Czackim powinien zostać zaostrzony.",
+    "Moim zdaniem samorząd powinien podjąć wszelkich starań w celu rezygnacji Ministerstwa Edukacji Narodowej z decyzji o zdalnym systemie nauczania na korzyść innych metod np.: systemu hybrydowego.",
+    "Ważne dla mnie jest, żeby samorząd negocjował z dyrekcją o istnieniu ogólnodostępnego czajnika oraz mikrofalówki.",
+    "Ważne dla mnie jest poszerzenie oferty sportowej szkoły.", 
+    "Ważne dla mnie są negocjacje z Okienkiem w celu obniżenia cen dla Czackiewiczów.",
+    "Moim zdaniem elitarność sekcji oraz ich działalności w Czackim powinna zostać zmniejszona.",
+    "Uważam, że Czacki powinien zrezygnować ze współpracy z Technikum.",
+    "Ważne dla mnie jest utworzenie systemu zgłaszania inicjatyw uczniowskich.",
+    "Uważam, że w Czackim powinny się odbywać spotkania z różnymi osobami aktywnymi politycznie, niezależnie od ich poglądów.",
+    "Uważam, iż społeczność Czackiego powinna brać czynny udział w akcjach typu Tęczowy Piątek."];
 
     //0 - brak odpowiedzi,
     //1 - tak,
@@ -208,21 +219,21 @@
     //var candidates_answers = [odp_duda, odp_biedron, odp_trzaskowski, odp_bosak];
     //var candidates_surnames = ["A. Duda", "R. Biedroń", "R. Trzaskowski", "K. Bosak"];
 
-    var odp_ania_i_dominik = [2, 2, 1, 2, 3];
-    var odp_maria_i_zocha = [1, 2, 1, 1, 2];
-    var odp_my_zalatwimy = [1, 1, 1, 3, 1];
-    var odp_partia_osobno = [1, 2, 3, 1, 3];
+    var odp_konsole = [1, 2, 1, 1, 1, 2, 2, 1, 1, 1];
+    var odp_kopytulski = [2, 2, 1, 1, 1, 2, 2, 1, 1, 1];
+    var odp_paulina_i_mikolaj = [1, 2, 3, 1, 1, 2, 2, 1, 1, 1];
+    var odp_wrzosek_ziemba = [2, 1, 2, 1, 1, 2, 2, 1, 2, 2];
 
-    var candidates_answers = [odp_ania_i_dominik, odp_maria_i_zocha, odp_my_zalatwimy, odp_partia_osobno];
-    var candidates_surnames = ["Ania i Dominik", "Maria i Zocha", "My Załatwimy!", "Partia Osobno"];
-    var candidates_imgs = ["ania_i_dominik.jpg", "maria_i_zocha.jpg", "my_zalatwimy.png", "partia_osobno.jpg"];
+    var candidates_answers = [odp_konsole, odp_kopytulski, odp_paulina_i_mikolaj, odp_wrzosek_ziemba];
+    var candidates_surnames = ["KONSOLE", "KOPYTULSKI2020", "PAULINA I MIKOŁAJ", "WRZOSEK ZIEMBA 2020"];
+    var candidates_imgs = ["konsole.png", "kopytulski.png", "ku.png", "wrzosek-ziemba.png"];
 
 
     
     function resultCheck(){
         var pagination_div = document.getElementById("pagination");
         pagination_div.style.display = "none";
-        var results = [0, 0, 0, 0, 0];
+        var results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         //alert(user_answers.length);
         var max_points = 3 * user_answers.length;
 
@@ -313,14 +324,14 @@ function setCandidate(position, percent, surname){
     var candidate_img_id =  "candidate-img-" + candidate_position.toString();
     var candidate_img = document.getElementById(candidate_img_id);
     var candidate_img_src;
-    if(surname == "Ania i Dominik"){
-        candidate_img_src = "assets/img/ania_i_dominik.jpg";
-    } else if(surname == "Maria i Zocha"){
-        candidate_img_src = "assets/img/maria_i_zocha.jpg";
-    } else if(surname == "My Załatwimy!"){
-        candidate_img_src = "assets/img/my_zalatwimy.png";
-    } else if(surname == "Partia Osobno"){
-        candidate_img_src = "assets/img/partia_osobno.jpg";
+    if(surname == "KONSOLE"){
+        candidate_img_src = "assets/img/konsole.png";
+    } else if(surname == "KOPYTULSKI2020"){
+        candidate_img_src = "assets/img/kopytulski.png";
+    } else if(surname == "PAULINA I MIKOŁAJ"){
+        candidate_img_src = "assets/img/ku.png";
+    } else if(surname == "WRZOSEK ZIEMBA 2020"){
+        candidate_img_src = "assets/img/wrzosek-ziemba.png";
     } else{
         candidate_img_src = "assets/img/question-mark.png"
     }
@@ -403,3 +414,8 @@ document.getElementById('answers_change-to-2').addEventListener("click", functio
 document.getElementById('answers_change-to-3').addEventListener("click", function(){nextCommitteeAnswers(3)});
 document.getElementById('answers_change-to-4').addEventListener("click", function(){nextCommitteeAnswers(4)});
 document.getElementById('answers_change-to-5').addEventListener("click", function(){nextCommitteeAnswers(5)});
+document.getElementById('answers_change-to-6').addEventListener("click", function(){nextCommitteeAnswers(6)});
+document.getElementById('answers_change-to-7').addEventListener("click", function(){nextCommitteeAnswers(7)});
+document.getElementById('answers_change-to-8').addEventListener("click", function(){nextCommitteeAnswers(8)});
+document.getElementById('answers_change-to-9').addEventListener("click", function(){nextCommitteeAnswers(9)});
+document.getElementById('answers_change-to-10').addEventListener("click", function(){nextCommitteeAnswers(10)});
