@@ -2007,6 +2007,18 @@ faq-answer {
   }
 }
 
+#answers_pagination {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+@media (min-width: 575px) {
+  #answers_pagination {
+    overflow-y: initial;
+    overflow-x: initial;
+  }
+}
+
 .pagination {
   position: relative;
   width: 100%;
