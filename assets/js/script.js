@@ -21,13 +21,13 @@
 
     for (var i = 0; i < agreed.length; i++) {
         agreed[i].addEventListener("click", function(){setAnswer(1)})
-    };
+    }
     for (var i = 0; i < nonagreed.length; i++) {
         nonagreed[i].addEventListener("click", function(){setAnswer(2)})
-    };
+    }
     for (var i = 0; i < neutral.length; i++) {
         neutral[i].addEventListener("click", function(){setAnswer(3)})
-    };
+    }
 
     var all_steps_len = document.getElementsByClassName("test-step").length;
 
