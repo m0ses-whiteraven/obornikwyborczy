@@ -1995,6 +1995,18 @@ faq-answer {
   }
 }
 
+#pagination {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+@media (min-width: 575px) {
+  #pagination {
+    overflow-y: initial;
+    overflow-x: initial;
+  }
+}
+
 .pagination {
   position: relative;
   width: 100%;
